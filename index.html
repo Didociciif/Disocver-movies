@@ -13,6 +13,7 @@
       <ul>
         <li><a href="#inicio">Início</a></li>
         <li><a href="#novidades">Próximos Lançamentos</a></li>
+        <li><a href="#musicas">Novas Músicas</a></li>
         <li><a href="#sobre">Sobre Nós</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -26,8 +27,15 @@
       <button onclick="getUpcomingMovies('hbo')">HBO</button>
       <button onclick="getUpcomingMovies('amazon')">Amazon Prime</button>
       <button onclick="getUpcomingMovies('disney')">Disney+</button>
+      <button onclick="getJustWatchUpcoming()">JustWatch</button>
     </div>
     <div id="movies"></div>
+  </section>
+
+  <section id="musicas">
+    <h2>Novas Músicas do Spotify</h2>
+    <button onclick="getNewReleases()">Buscar Novas Músicas</button>
+    <div id="music-container"></div>
   </section>
 
   <footer>
