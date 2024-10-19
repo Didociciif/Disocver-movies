@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Movies</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Discover Movies</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#novidades">Próximos Lançamentos</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="novidades">
+    <h2>Próximos Lançamentos</h2>
+    <div class="platforms">
+      <button onclick="getUpcomingMovies('netflix')">Netflix</button>
+      <button onclick="getUpcomingMovies('hbo')">HBO</button>
+      <button onclick="getUpcomingMovies('amazon')">Amazon Prime</button>
+      <button onclick="getUpcomingMovies('disney')">Disney+</button>
+    </div>
+    <div id="movies"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Discover Movies - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
